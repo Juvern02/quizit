@@ -1,0 +1,57 @@
+.main {
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3dvw;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    transform: translateY(-5dvh);
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1e1e2a;
+}
+
+.main button {
+    border-radius: 8px;
+    border-width: 0;
+
+    width: clamp(12rem, 20dvw, 20rem);
+    height: 40dvh;
+
+    color: #eeeeee;
+    cursor: pointer;
+
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 0.7rem 30px;
+    text-align: center;
+}
+
+.dailyQuiz{
+    background-color: #FF4F9A;
+}
+
+.create{
+    background-color: #ffab40;
+}
+
+.play{
+    background-color: #488dff
+}
+
+.discover{
+    background-color: #fd271d
+}
+
+
+@media (max-width: 1400px) {
+
+}

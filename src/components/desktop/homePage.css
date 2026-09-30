@@ -1,0 +1,126 @@
+.background {
+        flex: 1;
+        width: 100%;
+        
+        background-color: #1e1e2a;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+input::placeholder {
+    color: #eeeeee;
+    opacity: 1;
+    font-weight: 700;
+}
+
+input {
+    background-color:#2f2f53;
+    border-radius: 8px;
+    border-width: 0;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0.7rem 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+}
+
+.main{
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mainElements {
+    position: relative;
+    left: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(1rem, 3dvw, 4rem);
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.mainLogo {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 2.5vw;
+}
+
+.homePageLogo {
+    width: clamp(10rem, 30vw, 35rem);
+    height: auto;
+}
+
+.slogan {
+    width: clamp(20rem, 50vw, 70rem);
+    height: auto;
+}
+
+.lobbySearchBar {
+    width: clamp(10rem, 25vw, 30rem);
+    height: 3rem;
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 1400px) {
+
+    .mainElements {
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        width: 100%;
+    }
+
+    .mainContent {
+        display: contents;
+    }
+
+    .mainLogo {
+        order: 1;
+        padding: 0;
+    }
+
+    .slogan {
+        order: 2;
+    }
+
+    .lobbySearchBar {
+        order: 3;
+        margin-left: 0;
+    }
+
+    .homePageLogo {
+        width: clamp(10rem, 60vw, 25rem);
+    }
+
+    .slogan {
+        width: clamp(15rem, 80vw, 35rem);
+    }
+
+    .lobbySearchBar {
+        width: clamp(15rem, 70vw, 25rem);
+        height: 3rem;
+    }
+}

@@ -1,0 +1,138 @@
+.active-game-background {
+    min-height: 100dvh;
+    width: 100%;
+
+    background-color: #7b61ff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    font-family: "Comfortaa", sans-serif;  
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.activeGameHeader {
+    display: flex;
+    background-color:#1a1a2e;
+    border-radius: 17px;
+    width: 90dvw;
+    margin: 0 auto;
+    margin-top: 3dvh;
+}
+
+.playerCount {
+    color: #eeeeee;
+    margin-left: 1rem;
+}
+
+.quizName {
+    color: #eeeeee;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 50dvh;
+    margin-top: 2.5dvh;
+    gap: 3.5dvh;
+}
+
+.questionBox {
+    background-color: #eeeeee;
+    border: 3px solid #1a1a2e;
+    border-radius: 17px;
+    width: 60dvw;
+    align-items: center;
+    justify-items: center;
+}
+
+.questionText {
+    font-size: clamp(0.5rem, 2.6vw, 1.8rem);
+}
+
+.questionImage{
+    width: 35rem;
+    height: auto;
+    border-radius: 17px;
+}
+
+.answerButtons {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 0.5rem;
+
+    margin-top: auto;
+    margin-bottom: 7dvh;
+}
+
+.answerButtons button{
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    width: 32dvw;
+    border: 3px solid #1a1a2e;
+}
+
+.answerButtons button img{
+    width: 6dvw;
+    height: auto;
+}
+
+.redButton {
+    order: 1;    
+    background-color: #e92121;
+    justify-content: flex-start;
+}
+
+.yellowButton {
+    order: 3;  
+    background-color: #FFD166;
+    justify-content: flex-end;
+}
+
+.greenButton {
+    order: 4;  
+    background-color: #00df00;
+    justify-content: flex-start;
+}
+
+.blueButton {
+    order: 6;
+    background-color: #488dff;
+    justify-content: flex-end;
+}
+
+.activeGameLogo {
+    order: 5;  
+    width: 20dvw;
+    height: auto;
+}
+
+.questionNumber {
+    order: 2;  
+    border: 0.6rem solid #1a1a2e;
+    border-radius: 17px;
+    background-color: darkgrey;
+    align-items: center;
+    justify-items: center;
+    width: 20dvw;
+    height: auto;
+}
+
+.questionNumber p {
+    padding: 0rem 0rem;
+    color: #eeeeee;
+    font-size: clamp(0.5rem, 1.6vw, 1.2rem);
+}
